@@ -343,7 +343,16 @@ h6 {
     transition: 0.3s;
     z-index: 9998;
   }
-
+  img.hero {
+    object-fit: cover;
+    object-position: center top;
+  }
+  
+  @media (max-width: 768px) {
+    img.hero {
+      object-position: center 30%;
+    }
+  }
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-dropdown-color);
